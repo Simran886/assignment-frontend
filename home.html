@@ -1,0 +1,213 @@
+</!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" href="home.css" type="text/css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+<body bgcolor="#f1f1f1">
+
+	<div class="container">
+		<!-- navigation bar containing filter, notification and profile icons-->
+		<div class="row" id='top-header'>
+			<div id='slider'>
+				<a href="#"><img src="images/hamburger.png" /></a>
+			</div>
+			<nav>
+				<ul>
+					<li id="nav-item"> <a href="#"><img src="images/profile.jpeg" style="height: 80%; margin-right: 10%; border-radius: 15%" /></a> </li>
+					<li id="nav-item"> <a href="#"><img src="images/notif-bell.png" style="height: 60%; margin-top: 15%; padding-right: 25%" /></a> </li>
+					<li id="nav-item"> <a href="#"><img src="images/filter.png" style="height: 60%; margin-top: 15%; padding-right: 25%" /></a> </li>
+				</ul>
+			</nav>
+		</div>
+		<!-- the tabs to select new projects, allocated and the history -->
+		<div class="row tab">
+			<div class="col-md-4">
+				<button style="text-align: center; width: 100%;" class="tablinks active" onclick="openTab(event, 'New', this)">New Projects</button>
+			</div>
+			<div class="col-md-4">
+				<button style="text-align: center; width: 100%" class="tablinks" onclick="openTab(event, 'Allocated', this)">Allocated</button>
+			</div>
+			<div class="col-md-4">
+				<button style="text-align: center; width: 100%" class="tablinks" onclick="openTab(event, 'History', this)">History</button>
+			</div>
+		</div>
+		<!-- the content of the new projects tab -->
+		<div id="New" class="row tabcontent" style="display: block;">
+			<!-- content 1 -->
+			<div class="container" id="rcorners-div">
+				<div class="row">
+					<div style="width: 60%; float:left">
+						<img src="images/wedding.jpg" align="left" style="width: 25%; margin-left: -7%; border-radius: 25%; border: solid; border-color: white" />
+						<p id="content-heading" style="margin-top: 4%; font-size: 200%">Wedding shoot</p>
+						<p id="content-heading" style="color: orange">₹ 700</p>
+					</div>
+					<div style="width: 40%; float:right">
+						<a href="#"><img src="images/red-btn.png" align="right" style="width: 15%; margin-right: -7%" /></a>
+						<a href="#"><img src="images/tick.png" align="right" style="width: 15%; margin-right: 5%; border-radius: 25%" /></a>
+					</div>
+				</div>
+
+				<div class="row" id="content-des">
+					<p> On the wedding day, photographers must capture hight quality images in an environment that is often hectic. On the wedding day, photographers must capture hight quality images in an environment that is often hectic.</p>
+				</div>
+
+				<div class="row" id="content-des">
+					<div class="container" style="width: 50%; float:left">
+						<div class="row">
+							<p style="color: white"><b>Shoot Id:</b> 000118</p>
+						</div>
+						<div class="row">
+							<p style="color: white"><b>Client:</b> Individual</p>
+						</div>
+					</div>
+
+					<div class="container" style="width: 50%; float:right">
+						<div class="row">
+							<p style="color: white"><b>City:</b> Kolkata</p>
+						</div>
+						<div class="row">
+							<p style="color: white"><b>Date:</b> 16 Nov</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- content 2 -->
+			<div class="container" id="rcorners-div">
+				<div class="row">
+					<div style="width: 60%; float:left">
+						<img src="images/interior.jpeg" align="left" style="width: 25%; margin-left: -7%; border-radius: 25%; border: solid; border-color: white" />
+						<p id="content-heading" style="margin-top: 4%; font-size: 200%">Interior shoot</p>
+						<p id="content-heading" style="color: orange">₹ 3k</p>
+					</div>
+					<div style="width: 40%; float:right">
+						<a href="#"><img src="images/red-btn.png" align="right" style="width: 15%; margin-right: -7%" /></a>
+						<a href="#"><img src="images/tick.png" align="right" style="width: 15%; margin-right: 5%; border-radius: 25%" /></a>
+					</div>
+				</div>
+
+				<div class="row" id="content-des">
+					<p> Professional Interior and ....</p>
+				</div>
+			</div>
+			<!-- content 3 -->
+			<div class="container" id="rcorners-div">
+				<div class="row">
+					<div style="width: 60%; float:left">
+						<img src="images/maternity.jpg" align="left" style="width: 25%; margin-left: -7%; border-radius: 25%; border: solid; border-color: white" />
+						<p id="content-heading" style="margin-top: 4%; font-size: 200%">Maternity shoot</p>
+						<p id="content-heading" style="color: orange">₹ 4k</p>
+					</div>
+					<div style="width: 40%; float:right">
+						<a href="#"><img src="images/red-btn.png" align="right" style="width: 15%; margin-right: -7%" /></a>
+						<a href="#"><img src="images/tick.png" align="right" style="width: 15%; margin-right: 5%; border-radius: 25%" /></a>
+					</div>
+				</div>
+
+				<div class="row" id="content-des">
+					<p> Picture of your pregnancy ....</p>
+				</div>
+			</div>
+			<!-- content 4 -->
+			<div class="container" id="rcorners-div">
+				<div class="row">
+					<div style="width: 60%; float:left">
+						<img src="images/pre-wedding.jpeg" align="left" style="width: 25%; margin-left: -7%; border-radius: 25%; border: solid; border-color: white" />
+						<p id="content-heading" style="margin-top: 4%; font-size: 200%">Pre Wedding shoot</p>
+						<p id="content-heading" style="color: orange">₹ 1k</p>
+					</div>
+					<div style="width: 40%; float:right">
+						<a href="#"><img src="images/red-btn.png" align="right" style="width: 15%; margin-right: -7%" /></a>
+						<a href="#"><img src="images/tick.png" align="right" style="width: 15%; margin-right: 5%; border-radius: 25%" /></a>
+					</div>
+				</div>
+
+				<div class="row" id="content-des">
+					<p> Picture of your prewedding ....</p>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- the content of the allocated tab -->
+		<div id="Allocated" class="tabcontent">
+			<!-- content 1 -->
+			<div class="container" id="rcorners-div">
+				<div class="row">
+					<div style="width: 60%; float:left">
+						<img src="images/birthday.jpg" align="left" style="width: 25%; margin-left: -7%; border-radius: 25%; border: solid; border-color: white" />
+						<p id="content-heading" style="margin-top: 4%; font-size: 200%">Birthday shoot</p>
+						<p id="content-heading" style="color: orange">₹ 3k</p>
+					</div>
+					<div style="width: 40%; float:right">
+						<a href="#"><img src="images/red-btn.png" align="right" style="width: 15%; margin-right: -7%" /></a>
+						<a href="#"><img src="images/tick.png" align="right" style="width: 15%; margin-right: 5%; border-radius: 25%" /></a>
+					</div>
+				</div>
+
+				<div class="row" id="content-des">
+					<p> Pictures of your birthday party ....</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- the content of the history tab -->
+		<div id="History" class="tabcontent">
+			<!-- content 1 -->
+			<div class="container" id="rcorners-div">
+				<div class="row">
+					<div style="width: 60%; float:left">
+						<img src="images/pre-wedding.jpeg" align="left" style="width: 25%; margin-left: -7%; border-radius: 25%; border: solid; border-color: white" />
+						<p id="content-heading" style="margin-top: 4%; font-size: 200%">Pre Wedding shoot</p>
+						<p id="content-heading" style="color: orange">₹ 1k</p>
+					</div>
+					<div style="width: 40%; float:right">
+						<a href="#"><img src="images/red-btn.png" align="right" style="width: 15%; margin-right: -7%" /></a>
+						<a href="#"><img src="images/tick.png" align="right" style="width: 15%; margin-right: 5%; border-radius: 25%" /></a>
+					</div>
+				</div>
+
+				<div class="row" id="content-des">
+					<p> Picture of your prewedding ....</p>
+				</div>
+			</div>
+			<!-- content 2 -->
+			<div class="container" id="rcorners-div">
+				<div class="row">
+					<div style="width: 60%; float:left">
+						<img src="images/birthday.jpg" align="left" style="width: 25%; margin-left: -7%; border-radius: 25%; border: solid; border-color: white" />
+						<p id="content-heading" style="margin-top: 4%; font-size: 200%">Birthday shoot</p>
+						<p id="content-heading" style="color: orange">₹ 3k</p>
+					</div>
+					<div style="width: 40%; float:right">
+						<a href="#"><img src="images/red-btn.png" align="right" style="width: 15%; margin-right: -7%" /></a>
+						<a href="#"><img src="images/tick.png" align="right" style="width: 15%; margin-right: 5%; border-radius: 25%" /></a>
+					</div>
+				</div>
+				
+				<div class="row" id="content-des">
+					<p> Pictures of your birthday party ....</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		function openTab(evt, tabName, btn) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(tabName).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+	</script>
+
+</body>
+</html>
